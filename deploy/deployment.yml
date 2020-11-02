@@ -18,3 +18,7 @@ spec:
         env:
             - name: EULA
               value: "TRUE"
+        volumes:
+            - name: mc-data
+              persistentVolumeClaim:
+                claimName: mc-pvc
